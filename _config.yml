@@ -1,1 +1,66 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your entire site, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# `jekyll serve`. If you change this file, please restart the server process.
+
+# Theme Settings
+#
+# Review documentation to determine if you should use `theme` or `remote_theme`
+# https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
+
 theme: jekyll-theme-slate
+
+# Site Settings
+locale                   : "ko-KR" # 사이트의 언어 설정을 할 수있습니다.
+# 표시되는 언어의 내용은 _data/ui-text.yml 에서 수정이 가능합니다.
+
+title                    : "서영 blog" # 블로그 제목
+title_separator          : "-" # 글 제목 - 블로그 제목  과 같이 사이트를 표시해줍니다.
+name                     : "Seoyoung-Lee" # 사이트 소유자의 이름을 사용합니다.(Used to assign a site author.)
+description              : "Seoyoung-Lee's personal website." # 사이트에 대한 간단한 설명입니다.
+url                      : "https://lee-seoyoung.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+# 사이트의 주소를 입력합니다.
+
+baseurl                  : # the subpath of your site, e.g. "/blog"
+# 사이트의 baseurl을 설정해 줍니다.
+
+repository               : "Lee-Seoyoung/blog" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+
+teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+# breadcrumbs            : false # true, false (default)
+words_per_minute         : 200 #read time을 계산하기 위한 분당 읽는 글자수 입니다. 
+comments: # 댓글 설정에 대한부분입니다. 기본적으로 false 로 되어있습니다.
+ provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2" "custom"
+  disqus:   #개인적으로 disqus 댓글 모듈을 사용하였습니다.
+    shortname            : imreplay-blog # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+  discourse:
+    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+  facebook:
+    # https://developers.facebook.com/docs/plugins/comments
+    appid                :
+    num_posts            : # 5 (default)
+    colorscheme          : # "light" (default), "dark"
+staticman:
+  allowedFields          : # ['name', 'email', 'url', 'message']
+  branch                 : # "master"
+  commitMessage          : # "New comment."
+  filename               : # comment-{@timestamp}
+  format                 : # "yml"
+  moderation             : # true
+  path                   : # "/_data/comments/{options.slug}" (default)
+  requiredFields         : # ['name', 'email', 'message']
+  transforms:
+    email                : # "md5"
+  generatedFields:
+    date:
+      type               : # "date"
+      options:
+        format           : # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
+reCaptcha:
+  siteKey                :
+  secret                 :
+atom_feed:
+  path                   : # blank (default) uses feed.xml
+
