@@ -10,7 +10,7 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-theme: jekyll-theme-slate
+theme: jekyll-theme-minimal
 
 # Site Settings
 locale                   : "ko-KR" # 사이트의 언어 설정을 할 수있습니다.
